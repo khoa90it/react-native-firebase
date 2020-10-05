@@ -141,6 +141,9 @@ RCT_EXPORT_METHOD(deleteToken:
       resolve([NSNull null]);
     }
   }];
+   [[FIRInstanceID instanceID] deleteIDWithHandler:^void(NSError *_Nullable error) {
+
+    }];
 }
 
 RCT_EXPORT_METHOD(getAPNSToken:
